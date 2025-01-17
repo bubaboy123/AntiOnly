@@ -1,0 +1,50 @@
+title: Anti Only
+original Author: Shananas
+description: Play as Anti Form the whole time. (Except STT, PL, and Atlantica for now) To allow the game to be beaten you will not have the increased damage Anti Form takes and the inability to use items and magic.
+assets:
+#sora memt edit and anti keyblade
+- name: 03system.bin
+  method: binarc  
+  source:
+  - name: memt
+    method: listpatch
+    type: List
+    source:
+    - name: memt.yml
+      type: memt
+  - name: wmst
+    type: list
+    method: copy
+    source:
+    - name: wmst_0.list
+  - name: pref
+    method: binarc
+    type: binary
+    source:
+    - name: prty
+      type: list
+      method: copy
+      source:
+      - name: prty_0.list
+#Form Starting Weapons
+- name: 00common.bdx
+  method: bdscript
+  source:
+  - name: 00common.bdscript
+#Allow Anti to use RCs, items, magic
+- name: 00objentry.bin
+  method: listpatch
+  type: List
+  source:
+  - name: obj.yml
+    type: objentry
+#Animations
+- name: obj/P_EX100_HTLF.mset
+  method: copy
+  source:
+  - name: P_EX100_HTLF.mset
+#Keyblade for RCs
+- name: obj/W_EX010_HTLF.mset
+  method: copy
+  source:
+  - name: W_EX010_HTLF.mset
