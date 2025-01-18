@@ -2,7 +2,7 @@ title: Anti Only
 original Author: Shananas
 description: Play as Anti Form the whole time. (Except Pride Lands and Atlantica) To allow the game to be beaten you will not have the increased damage Anti Form takes and you will be able to use items and magic.
 assets:
-#sora memt edit and anti keyblade
+#sora memt edit, anti keyblade, anti movement values, let valor use magic (anti is considred valor by the game)
 - name: 03system.bin
   method: binarc  
   source:
@@ -44,7 +44,7 @@ assets:
   source:
   - name: obj.yml
     type: objentry
-#Animations
+#Animations and AX2 movement
 - name: obj/P_EX100_HTLF.mset
   method: copy
   source:
