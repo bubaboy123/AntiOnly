@@ -11,7 +11,7 @@
   NeoMoveset: 6
   NeoStatus: 1
   NoApdx: false
-  ObjectForm: MasterForm
+  ObjectForm: ValorForm
   ObjectId: 89
   ObjectShadowSize: NoShadow
   ObjectTargetType: M
@@ -41,7 +41,7 @@
   NeoMoveset: 16
   NeoStatus: 1
   NoApdx: false
-  ObjectForm: MasterForm
+  ObjectForm: ValorForm
   ObjectId: 1002
   ObjectShadowSize: NoShadow
   ObjectTargetType: M
@@ -71,7 +71,7 @@
   NeoMoveset: 42
   NeoStatus: 1
   NoApdx: false
-  ObjectForm: MasterForm
+  ObjectForm: ValorForm
   ObjectId: 1649
   ObjectShadowSize: NoShadow
   ObjectTargetType: M
@@ -101,7 +101,7 @@
   NeoMoveset: 48
   NeoStatus: 1
   NoApdx: false
-  ObjectForm: MasterForm
+  ObjectForm: ValorForm
   ObjectId: 1650
   ObjectShadowSize: NoShadow
   ObjectTargetType: M
@@ -131,7 +131,7 @@
   NeoMoveset: 16
   NeoStatus: 1
   NoApdx: false
-  ObjectForm: MasterForm
+  ObjectForm: ValorForm
   ObjectId: 2394
   ObjectShadowSize: NoShadow
   ObjectTargetType: M

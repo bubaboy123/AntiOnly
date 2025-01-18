@@ -32,6 +32,14 @@ assets:
     - name: CmdList.yml
       type: cmd
     type: list
+- name: 00battle.bin
+  method: binarc  
+  source:
+  - name: plrp
+    type: list
+    method: copy
+    source:
+    - name: plrp_0.list
 #Form Starting Weapons
 - name: 00common.bdx
   method: bdscript

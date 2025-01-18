@@ -1,3 +1,27 @@
+- Id: 2 #Magic
+  Execute: 2
+  Argument: 2
+  SubMenu: 1
+  CmdIcon: Magic
+  MessageId: 33249
+  Flags: Cursor, Battle, Secure
+  Range: -1.0
+  Dir: 0.0
+  DirRange: -1.0
+  Cost: 0
+  CmdCamera: Null
+  Priority: 100
+  CmdReceiver: Player
+  Time: 0
+  Require: 0
+  Mark: 1
+  CmdAction: Null
+  ReactionCount: 0
+  DistRange: 0
+  Score: 0
+  DisableForm: 0
+  Group: 1
+  Reserve: 0
 - Id: 297 #Key Counter
   Execute: 297
   Argument: 297
