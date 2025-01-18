@@ -1,6 +1,6 @@
 title: Anti Only
 original Author: Shananas
-description: Play as Anti Form the whole time. (Except STT, PL, and Atlantica for now) To allow the game to be beaten you will not have the increased damage Anti Form takes and the inability to use items and magic.
+description: Play as Anti Form the whole time. (Except PL and Atlantica for now) To allow the game to be beaten you will not have the increased damage Anti Form takes and the inability to use items and magic.
 assets:
 #sora memt edit and anti keyblade
 - name: 03system.bin
@@ -26,6 +26,12 @@ assets:
       method: copy
       source:
       - name: prty_0.list
+  - method: listpatch
+    name: cmd
+    source:
+    - name: CmdList.yml
+      type: cmd
+    type: list
 #Form Starting Weapons
 - name: 00common.bdx
   method: bdscript
@@ -48,3 +54,34 @@ assets:
   method: copy
   source:
   - name: W_EX010_HTLF.mset
+#Skateboard
+- name: obj/F_TT010.mset
+  method: copy
+  source:
+  - name: obj/F_TT010_SORA.mset
+    type: internal
+- name: obj/F_TT010_ROXAS.mset
+  method: copy
+  source:
+  - name: obj/F_TT010_SORA.mset
+    type: internal
+#Twilight Thorn
+- method: copy
+  name: obj/B_EX100.mset
+  source:
+  - name: obj/B_EX100.mset
+#Dog
+- method: binarc
+  name: ard/us/tt12.ard
+  multi:
+  - name: ard/fr/tt12.ard
+  - name: ard/gr/tt12.ard
+  - name: ard/it/tt12.ard
+  - name: ard/sp/tt12.ard
+  - name: ard/tt12.ard
+  source:
+  - method: spawnpoint
+    name: b_40
+    source:
+    - name: b_40.yml
+    type: AreaDataSpawn
