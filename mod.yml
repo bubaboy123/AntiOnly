@@ -32,11 +32,6 @@ assets:
     - name: CmdList.yml
       type: cmd
     type: list
-#Form Starting Weapons
-- name: 00common.bdx
-  method: bdscript
-  source:
-  - name: 00common.bdscript
 #Allow Anti to use RCs, items, magic
 - name: 00objentry.bin
   method: listpatch
@@ -70,21 +65,6 @@ assets:
   name: obj/B_EX100.mset
   source:
   - name: obj/B_EX100.mset
-#Dog
-- method: binarc
-  name: ard/us/tt12.ard
-  multi:
-  - name: ard/fr/tt12.ard
-  - name: ard/gr/tt12.ard
-  - name: ard/it/tt12.ard
-  - name: ard/sp/tt12.ard
-  - name: ard/tt12.ard
-  source:
-  - method: spawnpoint
-    name: b_40
-    source:
-    - name: b_40.yml
-    type: AreaDataSpawn
 #Delete everything below if you dont want growth from other forms
 - name: 00battle.bin
   method: binarc  
