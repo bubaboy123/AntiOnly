@@ -2,6 +2,10 @@ title: Anti Only
 original Author: Shananas
 description: Play as Anti Form the whole time. (Except Pride Lands and Atlantica) To allow the game to be beaten you will not have the increased damage Anti Form takes and you will be able to use items and magic.
 assets:
+#shopFace fix Lua thanks to TopazTK
+- name: scripts/shopfaceReconstruct.lua
+  method: copy
+  source: shopfaceReconstruct.lua
 #sora memt edit, anti keyblade, anti movement values, let valor use magic (anti is considred valor by the game)
 - name: 03system.bin
   method: binarc  
