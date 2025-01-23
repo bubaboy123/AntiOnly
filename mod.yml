@@ -7,12 +7,16 @@ assets:
   method: copy
   source: 
   - name: shopfaceReconstruct.lua
+- name: scripts/ValorLuxordFix.lua
+  method: copy
+  source: 
+  - name: ValorLuxordFix.lua
 #Allow Anti to use RCs, items, magic
 - name: 00objentry.bin
   method: listpatch
   type: List
   source:
-  - name: 00battle.bin/obj.yml
+  - name: objentry.yml
     type: objentry
 #sora memt edit, anti keyblade, anti movement values, let valor use magic (anti is considred valor by the game)
 - name: 03system.bin
@@ -46,23 +50,69 @@ assets:
     type: list
 #Keyblade for RCs
 - name: obj/W_EX010_HTLF.mset
+  multi:
+  - name: obj/W_EX010_BTLF.mset
   method: copy
   source:
   - name: obj/W_EX010_HTLF.mset
 #Movement for AX2
 - name: obj/P_EX100_HTLF.mset
+  multi: 
+  - name: obj/P_EX100_BTLF.mset
   method: copy
   source:
   - name: obj/P_EX100_HTLF.mset
-#Luxord AI Change
-- name: obj/B_EX150.mdlx
-  method: binarc
+#Luord Fix
+- name: obj/P_EX100_BTLF.mdlx
+  method: copy
   source:
-  - name: b_ex
-    type: bdx
-    method: bdscript
-    source:
-    - name: obj/b_ex150.bdscript
+  - name: obj/P_EX100_HTLF.mdlx
+    type: internal
+- name: obj/P_EX100_BTLF.a.us
+  method: copy
+  source:
+  - name: obj/P_EX100_HTLF.a.us
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-0.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-1.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-2.dds
+    type: internal
+- name: remastered/obj/P_EX100_BTLF.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX100_HTLF.a.us/-3.dds
+    type: internal
 #Twilight Thorn
 - method: copy
   name: obj/B_EX100.mset
